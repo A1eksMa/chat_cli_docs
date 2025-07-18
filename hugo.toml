@@ -1,0 +1,53 @@
+baseURL = "https://chat-cli.org/"
+languageCode = "en-us"
+title = "Chat CLI Documentation"
+theme = "LoveIt"
+defaultContentLanguage = "en"
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  # LoveIt theme parameters can be configured here.
+  # For more details, check the theme's documentation.
+  defaultTheme = "auto"
+  description = "Chat CLI Documentation"
+  [params.code]
+    render.goat = false
+    render.mermaid = false
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+
+[outputs]
+    home = ["HTML"]
+
+[languages]
+    [languages.en]
+      title = "Documentation"
+      languageName = "English"
+      weight = 1
+      contentDir = "content/en"
+    
+    [languages.ru]
+      title = "Документация"
+      languageName = "Русский"
+      weight = 2
+      contentDir = "content/ru"
